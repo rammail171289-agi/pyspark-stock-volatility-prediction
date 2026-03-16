@@ -1,0 +1,10 @@
+# Window functions help access previous rows without aggregation.
+
+window = Window.orderBy("DATE")
+
+df = df.withColumn(
+    "previous_close",
+    lag("CLOSE").over(window)
+)
+
+display(df)
