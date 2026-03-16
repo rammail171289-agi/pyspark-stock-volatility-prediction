@@ -1,0 +1,3 @@
+for c in labels:
+    if isinstance(df.schema[c].dataType, StringType):
+        df = df.withColumn(c, col(c).cast("double"))
