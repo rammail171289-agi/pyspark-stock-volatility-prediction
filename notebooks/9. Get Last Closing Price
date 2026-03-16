@@ -1,0 +1,7 @@
+latest = df_return.orderBy(col("DATE").desc()).first()
+
+last_close = latest["CLOSE"]
+last_date = latest["DATE"]
+
+print("Last Trading Date:", last_date)
+print("Last Closing Price:", last_close)
