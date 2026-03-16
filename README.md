@@ -1,0 +1,2 @@
+# pyspark-stock-volatility-prediction
+Goal: Predict next trading day's expected price range using 1-month volatility.
