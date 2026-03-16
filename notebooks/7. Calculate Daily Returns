@@ -1,0 +1,8 @@
+# Formula:
+# Return = (Close - Previous Close) / Previous Close
+df_return = df.withColumn(
+    "return",
+    (col("CLOSE") - col("previous_close")) / col("previous_close")
+)
+
+display(df_return)
