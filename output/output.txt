@@ -1,0 +1,8 @@
+Predicted Monday Trading Range
+Lower Price: 844.7420605238123
+Upper Price: 877.9579394761878
+
+Acutal 
+CLOSE: 866.95
+Lower PRICE: 853.00
+Upper PRICE: 873.80
