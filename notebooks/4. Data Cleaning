@@ -1,0 +1,18 @@
+# Rename columns:
+df = df.withColumnRenamed('NO. OF  TRADES', 'NO_OF_TRADES') \
+       .withColumnRenamed('52W L', '52W_L') \
+       .withColumnRenamed('52W H', '52W_H') \
+       .withColumnRenamed('PREV. CLOSE', 'PREV_CLOSE')
+
+# Convert date:
+df = df.withColumn('DATE', to_date(col('DATE'), 'dd-MMM-yyyy'))
+
+# Remove commas:
+labels = ['OPEN','HIGH','LOW','PREV_CLOSE','LTP','CLOSE','VWAP',
+          '52W_H','52W_L','VOLUME','VALUE','NO_OF_TRADES']
+
+for c in labels:
+    df = df.withColumn(c, regexp_replace(col(c), ',', ''))
+
+
+
