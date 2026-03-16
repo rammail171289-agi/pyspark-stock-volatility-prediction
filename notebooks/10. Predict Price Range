@@ -1,0 +1,9 @@
+# Expected Move = Last Close × Volatility
+expected_move = last_close * volatility
+
+lower_price = last_close - expected_move
+upper_price = last_close + expected_move
+
+print("Predicted Monday Trading Range")
+print("Lower Price:", lower_price)
+print("Upper Price:", upper_price)
