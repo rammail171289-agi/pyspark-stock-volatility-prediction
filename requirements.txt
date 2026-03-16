@@ -1,1 +1,6 @@
 pyspark
+✅ PySpark Data Cleaning
+✅ Window Functions
+✅ Financial Data Analysis
+✅ Data Engineering Pipeline
+✅ Azure Data Lake Integration
