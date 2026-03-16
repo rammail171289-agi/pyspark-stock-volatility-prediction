@@ -1,0 +1,3 @@
+# Volatility = Standard Deviation of daily returns
+volatility = df_return.select(stddev("return")).collect()[0][0]
+volatility
