@@ -1,0 +1,1 @@
+df = spark.read.format("csv").option("header", True).option("inferSchema", True).load("abfss://bronze@asagitdata.dfs.core.windows.net/ADANIGREEN_16032026")
